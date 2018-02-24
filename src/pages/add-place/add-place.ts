@@ -11,8 +11,8 @@ import { NgForm } from '@angular/forms';
 })
 export class AddPlacePage {
   location: Location = {
-    lat: 40.7624324,
-    lng: -73.9759827
+    lat: 25.119865401879437,
+    lng: 55.372692346572876
   };
 
   constructor(private modalCtrl: ModalController) {}
