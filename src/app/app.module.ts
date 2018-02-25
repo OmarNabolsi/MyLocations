@@ -1,3 +1,4 @@
+import { Geolocation } from '@ionic-native/geolocation';
 import { SetLocationPage } from './../pages/set-location/set-location';
 import { AddPlacePage } from './../pages/add-place/add-place';
 import { PlacePage } from './../pages/place/place';
@@ -37,7 +38,8 @@ import { AgmCoreModule } from '@agm/core';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Geolocation
   ]
 })
 export class AppModule {}
